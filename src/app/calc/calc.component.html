@@ -1,0 +1,24 @@
+<div class="calculadora">
+
+  <label for="text">Digite a sua Altura (M)</label>
+  <input type="number" class="altura" [(ngModel)]="altura" name="altura">
+
+  <br>
+
+  <label for="text">Digite o seu Peso (Kg)</label>
+  <input type="number" class="peso" [(ngModel)]="peso" name="peso">
+
+  <br>
+
+  <button (click)="calculo()">Calcular IMC</button>
+  <button (click)="limpar()" class="limpar">Limpar</button>
+
+  <br>
+
+  <span class="display">
+    {{imc}}
+    <br>
+    Classificação:
+    {{result}}
+  </span>
+</div>
